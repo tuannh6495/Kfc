@@ -10,96 +10,80 @@
     <link rel="stylesheet" href="~/Kfc.WebApp.styles.css" asp-append-version="true" />
 </head>
 <style>
-   .footer {
-    background-color: #202124;
-    color: #fff;
-    padding: 30px 0; /* Giảm padding */
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 15px; /* Thêm khoảng cách giữa các cột */
-}
-
-.footer-section {
-    flex: 1;
-    min-width: 200px;
-    margin-bottom: 15px; /* Giảm margin bottom */
-}
-
-.footer-section h3 {
-    font-size: 16px; /* Giảm kích thước tiêu đề */
-    margin-bottom: 10px; /* Giảm khoảng cách dưới tiêu đề */
-            color: #fff;
-}
-
-.footer-section ul {
-    list-style-type: none;
-    padding: 0;
-    line-height: 1.4; /* Thêm line-height */
-}
-
-.footer-section ul li {
-    margin-bottom: 4px; /* Giảm khoảng cách giữa các mục */
-}
-
-.footer-section ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 13px; /* Giảm kích thước font */
-    transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
-    color: #e4002b;
-}
-
-) 
-    .footer-content {
-        flex-direction: column;
+      .footer {
+        background-color: #202124;
+        color: #fff;
+        padding: 30px 0 0; /* Giữ padding top, bỏ padding bottom */
     }
-    
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0 20px; /* Thêm padding cho căn lề */
+    }
+
     .footer-section {
-        width: 100%;
-        margin-bottom: 20px; /* Giảm margin cho phiên bản mobile */
+        flex: 1;
+        min-width: 200px;
+        margin-bottom: 15px;
+    }
+
+    .footer-section h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+        line-height: 1.4;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 4px;
+    }
+
+    .footer-section ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        transition: color 0.3s ease;
+    }
+
+    .footer-section ul li a:hover {
+        color: #e4002b;
     }
 
     .copyright {
         text-align: center;
-        
-        
-        border-bottom: 1px solid #444; /* Thêm đường kẻ bên dưới */
+        border-bottom: 1px solid #444;
         font-size: 12px;
-        color: #888;
+        color: #888;  
     }
-
-   .company-info {
-    padding: 15px; /* Giảm padding */
-    font-size: 11px; /* Giảm kích thước chữ */
-    color: #888;
-    text-align: left;
-    max-width: 350px; /* Giảm chiều rộng tối đa */
-    line-height: 1.4; /* Thêm line-height để kiểm soát khoảng cách giữa các dòng */
-}
-
-.company-info p {
-    margin: 3px 0; /* Giảm margin giữa các đoạn */
-}
-
-.company-info strong {
-    color: #aaa;
-    font-size: 12px; /* Tăng nhẹ kích thước chữ cho phần tiêu đề */
-}
 
     .company-info {
-        padding: 15px 10px;
-        max-width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px 20px; /* Thêm padding left và right để căn chỉnh với footer-content */
+        font-size: 15px;
+        color: #ababab;
+        text-align: left;
+        line-height: 1.4;
     }
 
+    .company-info p {
+        margin: 3px 0;
+    }
+
+    .company-info strong {
+        color: #aaa;
+        font-size: 12px;
+    }
 }
 </style>
 <body>
@@ -182,7 +166,7 @@
             Copyright © 2023 KFC Vietnam
         </div>
         <div class="company-info">
-            <p><strong>CÔNG TY LIÊN DOANH TNHH KFC VIỆT NAM</strong></p>
+            <h3> CÔNG TY LIÊN DOANH TNHH KFC VIỆT NAM</h3>
             <p>Số 292 Bà Triệu, P. Lê Đại Hành, Q. Hai Bà Trưng, TP. Hà Nội.</p>
             <p>Điện thoại: (028) 38489828</p>
             <p>Email: lienhe@kfcvietnam.com.vn</p>
