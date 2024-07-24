@@ -1,4 +1,4 @@
-namespace Kfc.WebApp.Models
+﻿namespace Kfc.WebApp.Models
 {
     public class ErrorViewModel
     {
