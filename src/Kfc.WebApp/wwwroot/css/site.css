@@ -20,3 +20,108 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/*Css cho Layout*/
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.container-fluid {
+    padding-top: .85714286rem;
+    padding-bottom: .85714286rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    padding: 0 1.07142857rem;
+    margin-left: 5px;
+}
+
+.navbar-nav flex-grow-1 {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.nav-item {
+    color: #202124;
+    font-family: Roboto, sans-serif;
+    margin-left: .71428571rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-left-logo {
+    background-image: url(https://static.kfcvietnam.com.vn/images/web/kfc-logo.svg?v=5.0);
+    width: 78px;
+    height: 78px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.lang-option {
+    color: #000000;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.lang-option d-none {
+    color: #000000;
+    display: none;
+    cursor: pointer;
+    transition: color .2s linear;
+}
+
+.header-right-icon {
+    display: flex;
+    align-items: center;
+    line-height: 19px;
+    list-style-type: none;
+}
+
+.icon-login {
+    background: url(https://static.kfcvietnam.com.vn/images/web/sprite.png?v=5.0);
+    background-position: -10px -60px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.shopping-cart {
+    width: 30px;
+    height: 43px;
+    background: url(https://static.kfcvietnam.com.vn/images/web/cart.png?v=5.0) no-repeat -53px 1px;
+    background-position: -7px 1px;
+    background-size: 350%;
+    text-align: center;
+    line-height: 50px;
+    font-family: Roboto, sans-serif;
+    display: block;
+    cursor: pointer;
+}
+
+.menu-nav {
+    cursor: pointer;
+    width: 25px;
+    margin-left: 1rem;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.menu-nav span {
+    margin: .42857143rem 0;
+    height: 3px;
+    display: block;
+    /*margin: 3px;*/
+    background: #000;
+}

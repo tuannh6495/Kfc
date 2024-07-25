@@ -12,20 +12,44 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Kfc.WebApp</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="header-left">
+                    <a class="header-left-logo">
+                            <a asp-area="" asp-controller="Home" asp-action="Index"></a>
+                    </a>
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" style="font-size: 18px;" asp-area="" asp-controller="Home" asp-action="Index">THỰC ĐƠN</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" style="font-size: 18px;" asp-area="" asp-controller="Home" asp-action="Privacy">KHUYẾN MÃI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style="font-size: 18px;" asp-area="" asp-controller="Home" asp-action="Privacy">DỊCH VỤ TIỆC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style="font-size: 18px;" asp-area="" asp-controller="Home" asp-action="Privacy">HỆ THỐNG NHÀ HÀNG</a>
                         </li>
                     </ul>
+                </div>
+
+                <div class="header-right">
+                    <a class="lang-option" href="https://kfcvietnam.com.vn/en/order/delivery/hot-deal">English</a>
+                    <a class="lang-option d-none" href="https://kfcvietnam.com.vn/order/delivery/hot-deal">Tiếng Việt</a>
+                    <ul class="header-right-icon">
+                        <li>
+                            <i class="icon-login"></i>
+                        </li>
+                        
+                        <li>
+                            <div class="shopping-cart">
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="menu-nav">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
                 </div>
             </div>
         </nav>
