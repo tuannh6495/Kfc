@@ -66,6 +66,32 @@ html {
                     color: #fff;
                 }
 
+.download-text {
+    font-size: 16px;
+    margin-bottom: 10px; /* Khoảng cách giữa chữ và ảnh */
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+    .download img {
+        width: 150px; /* Bạn có thể điều chỉnh kích thước ảnh theo ý muốn */
+        height: auto;
+    }
+
+    .download .app-store, .download .ggplay {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+  
+
+        
+        
 .certification {
     width: 40%;
     display: flex;
@@ -142,7 +168,6 @@ html {
     .social-icon:hover {
         color: #fff;
     }
-
 
 /*Css cho Layout*/
 .header-left {
