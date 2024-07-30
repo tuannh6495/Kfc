@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Kfc.WebApp.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -15,10 +16,13 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <div class="header-left">
-                    <a class="header-left-logo">
-                            <a asp-area="" asp-controller="Home" asp-action="Index"></a>
-                    </a>
+                    <div class="header-left-logo">
+                        <a asp-area="" asp-controller="Home" asp-action="Index">
+                            <img src="https://static.kfcvietnam.com.vn/images/web/kfc-logo.svg?v=5.0" alt="Logo" />
+                        </a>
+                    </div>
                     <ul class="navbar-nav flex-grow-1">
+
                         <li class="nav-item">
                             <a class="nav-link text-dark" style="font-size: 18px;" asp-area="" asp-controller="Home" asp-action="Index">THỰC ĐƠN</a>
                         </li>
@@ -106,12 +110,38 @@
             <div class="footer-section">
                 <h3>Dowload App</h3>
                 <ul>
+                    <div class="download-app">
+                        <div class="app-icons">
+                            <a href="#" class="app-store"><i class="fab fa-app-store-ios"></i></a>
+                            <a href="#" class="google-play"><i class="fab fa-google-play"></i></a>
+                        </div>
+                    </div>
                 </ul>
             </div>
-        </div>
-        <div class="copyright">
-            Copyright © 2023 KFC Vietnam
-        </div>
+        </div> 
+        <div class="box" >
+        <div class="box-content ">
+            <div class="copyright">
+				Copyright © @DateTime.Now.Year KFC Vietnam
+		    </div>
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com/KFCVietnam/" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/kfc_vietnam/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/KFCVietnam2011" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://twitter.com/KFCVietnam" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>    
+		</div>
+		</div>
+        <div style="display: flex; justify-content: space-between;">
         <div class="company-info">
             <h3> CÔNG TY LIÊN DOANH TNHH KFC VIỆT NAM</h3>
             <p>Số 292 Bà Triệu, P. Lê Đại Hành, Q. Hai Bà Trưng, TP. Hà Nội.</p>
@@ -120,6 +150,13 @@
             <p>Mã số thuế: 0100773885</p>
             <p>Ngày cấp: 29/10/1998 - Nơi cấp: Cục Thuế Thành Phố Hà Nội</p>
         </div>
+        <div class="certification">
+			<a _ngcontent-ng-cli-universal-c73="" target="_blank" href="http://online.gov.vn/Home/WebDetails/8548">
+				<img _ngcontent-ng-cli-universal-c73="" src="https://kfcvn-static.cognizantorderserv.com/images/email/logo_footer.png">
+			</a>
+            </div>
+        </div>
+		
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
