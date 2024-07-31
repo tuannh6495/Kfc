@@ -274,3 +274,322 @@ html {
     background: #000;
 }
 
+/*Css cho Body*/
+.body-container {
+    width: 100%;
+}
+
+.slide-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    min-height: 250px;
+}
+
+.banner img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/*Css cho Body*/
+.container-item {
+    width: 100%;
+    padding: 27px;
+}
+
+.header-line {
+    position: relative;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.header-line::before {
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, .1);
+    height: 2px;
+    width: 100%;
+    top: calc(50% - 1.5px);
+    /*text-align: center;*/
+}
+
+.header-line h1 {
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    font-family: Oswald, sans-serif;
+    font-size: 25px;
+}
+
+.row1 {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.product img {
+    vertical-align: middle;
+    width: 100%;
+    min-height: 100px;
+    -webkit-transition: all .7s;
+}
+
+.row1-product-title {
+    display: block;
+    padding: 1px 10px 1px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.row1-product-title::after {
+    margin-left: 8px;
+    content: "\203A";
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.8em;
+}
+
+.product {
+    position: relative;
+    display: block;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2);
+    border-radius: .35714286rem;
+    cursor: pointer;
+    transition: color .2s linear;
+    margin: 10px;
+    width: 25%;
+    box-sizing: border-box;
+    flex-basis: calc(25% - 20px);   
+}
+
+
+/*Css cho row2*/
+.row2 {
+    padding: 15px;
+}
+
+.header-row2 {
+    display: flex;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-items: center;
+    padding: 15px;
+    font-family: Oswald, sans-serif;
+}
+
+.icon-avatar {
+    background: url(https://static.kfcvietnam.com.vn/images/web/sprite.png?v=5.0);
+    background-position: -10px -805px;
+    width: 80px;
+    height: 77px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-row2 span {
+    font-size: 22px;
+}
+
+.row2-item {
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.slide-row2-item {
+    display: flex;
+    width: 3790px;
+}
+
+.combo-item {
+    width: 291.5px;
+}
+
+.combo-item-card {
+    background: #fff;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
+    position: relative;
+    margin: 0 .71428571rem 1.78571429rem;
+}
+
+.combo-image {
+    padding: .35714286rem;
+    position: relative;
+}
+
+.combo-image img {
+    display: block;
+    width: 100%;
+}
+
+.item-desc {
+    padding: 18px 15px 60px;
+    min-height: 215px;
+    background: #fff;
+}
+
+/*.slide-row2-item::before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100%;
+    background: #fff;
+    opacity: .75;
+    position: absolute;
+    right: 0;
+    z-index: 99999;
+}*/
+
+/*.prev-btn {
+    color: #000;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
+    background-color: hsla(0, 0%, 100%, .6);
+    padding: .7rem 1.07142857rem;
+    left: -35px;
+    transform: rotate(180deg);
+    top: calc(50%-28px);
+}
+
+.prev-btn::after {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: .28571429rem;
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    content: "";
+    cursor: pointer;
+}*/
+
+.item-title {
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.item-button {
+    display: flex;
+    padding: 0 15px;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+
+.row2-item-price {
+    align-items: flex-end;
+}
+
+.item-desc p {
+    color: #6b6e79;
+    margin-bottom: 1.07142857rem;
+}
+
+.edit-button {
+    flex: 0 0 49%;
+    display: inline-block;
+    border-color: #202124;
+    color: #202124;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 700;
+    padding: .85714286rem 1.71428571rem;
+    background-color: #fff;
+    border: 1px solid #000000;
+    line-height: 20px;
+    font-size: 15px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    border-radius: 25px;
+    white-space: nowrap;
+}
+
+.add-button {
+    flex: 0 0 49%;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    padding: .85714286rem 1.71428571rem;
+    background-color: #e4002b;
+    border: 1px solid #e4002b;
+    line-height: 20px;
+    font-size: 15px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    border-radius: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+/*Css cho download*/
+.download {
+    position: relative;
+    width: 100%;
+}
+
+.download img {
+    cursor: pointer;
+    width: 100%;
+}
+
+.download-btn {
+    position: absolute;
+    display: flex;
+    right: 15%;
+    top: 49%;
+}
+
+.download-btn-icon {
+    display: block;
+    padding: 8px;
+}
+
+.icon-ggplay-btn {
+    background: url(https://static.kfcvietnam.com.vn/images/content/home/mobileappbanner/boton-google.png);
+    width: 162px;;
+    height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.icon-appstore-btn {
+    background: url(https://static.kfcvietnam.com.vn/images/content/home/mobileappbanner/boton-app-store.png);
+    width: 143px;
+    height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
