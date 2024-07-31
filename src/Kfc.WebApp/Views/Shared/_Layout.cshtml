@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -7,14 +8,21 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Kfc.WebApp.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <div class="header-left">
-                    <a class="header-left-logo" asp-area="" asp-controller="Home" asp-action="Index"></a>
+                    <div class="header-left-logo">
+                        <a asp-area="" asp-controller="Home" asp-action="Index">
+                            <img src="https://static.kfcvietnam.com.vn/images/web/kfc-logo.svg?v=5.0" alt="Logo" />
+                        </a>
+                    </div>
                     <ul class="navbar-nav flex-grow-1">
+
                         <li class="nav-item">
                             <a class="nav-link text-dark" style="font-size: 18px;" asp-area="" asp-controller="Home" asp-action="Privacy">THỰC ĐƠN</a>
                         </li>
@@ -59,8 +67,101 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Danh Mục Món Ăn</h3>
+                <ul>
+                    <li><a asp-controller="Menu" asp-action="Promotions">Ưu Đãi</a></li>
+                    <li><a asp-controller="Menu" asp-action="NewItems">Món Mới</a></li>
+                    <li><a asp-controller="Menu" asp-action="SingleCombo">Combo 1 Người</a></li>
+                    <li><a asp-controller="Menu" asp-action="GroupCombo">Combo Nhóm</a></li>
+                    <li><a asp-controller="Menu" asp-action="Chicken">Gà Rán - Gà Quay</a></li>
+                    <li><a asp-controller="Menu" asp-action="MainCourse">Burger - Cơm - Mì Ý</a></li>
+                    <li><a asp-controller="Menu" asp-action="Snacks">Thức Ăn Nhẹ</a></li>
+                    <li><a asp-controller="Menu" asp-action="Beverages">Thức Uống & Tráng Miệng</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Về KFC</h3>
+                <ul>
+                    <li><a asp-controller="About" asp-action="OurStory">Câu Chuyện Của Chúng Tôi</a></li>
+                    <li><a asp-controller="Promotions" asp-action="Index">Tin Khuyến Mãi</a></li>
+                    <li><a asp-controller="News" asp-action="Index">Tin tức KFC</a></li>
+                    <li><a asp-controller="Careers" asp-action="Index">Tuyển dụng</a></li>
+                    <li><a asp-controller="Services" asp-action="BirthdayParty">Đặt tiệc Sinh nhật</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Liên hệ KFC</h3>
+                <ul>
+                    <li><a asp-controller="Order" asp-action="Track">Theo dõi đơn hàng</a></li>
+                    <li><a asp-controller="Restaurants" asp-action="Locations">Hệ Thống Nhà Hàng</a></li>
+                    <li><a asp-controller="Contact" asp-action="Index">Liên hệ KFC</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li><a asp-controller="Policy" asp-action="Operations">Chính sách hoạt động</a></li>
+                    <li><a asp-controller="Policy" asp-action="Terms">Chính sách và quy định</a></li>
+                    <li><a asp-controller="Policy" asp-action="Privacy">Chính sách bảo mật thông tin</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class=" dowload-text">Dowload App</h3>
+                <div class="download">
+                    <div class="app-store">
+                        <a href="https://play.google.com/store/apps/details?id=kfc.vietnam&hl=en" target="_blank">
+                        <img src="https://static.kfcvietnam.com.vn/images/web/logo_appstore.png" />
+						</a>
+                    </div>
+                    <div class="ggplay">
+                        <a href="https://play.google.com/store/apps/details?id=kfc.vietnam&hl=en" target="_blank">
+                            <img src="https://static.kfcvietnam.com.vn/images/web/logo_playstore.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="box" >
+        <div class="box-content ">
+            <div class="copyright">
+				Copyright © @DateTime.Now.Year KFC Vietnam
+		    </div>
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com/KFCVietnam/" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/kfc_vietnam/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/KFCVietnam2011" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://twitter.com/KFCVietnam" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>    
+		</div>
+		</div>
+        <div style="display: flex; justify-content: space-between;">
+        <div class="company-info">
+            <h3> CÔNG TY LIÊN DOANH TNHH KFC VIỆT NAM</h3>
+            <p>Số 292 Bà Triệu, P. Lê Đại Hành, Q. Hai Bà Trưng, TP. Hà Nội.</p>
+            <p>Điện thoại: (028) 38489828</p>
+            <p>Email: lienhe@kfcvietnam.com.vn</p>
+            <p>Mã số thuế: 0100773885</p>
+            <p>Ngày cấp: 29/10/1998 - Nơi cấp: Cục Thuế Thành Phố Hà Nội</p>
+        </div>
+        <div class="certification">
+			<a _ngcontent-ng-cli-universal-c73="" target="_blank" href="http://online.gov.vn/Home/WebDetails/8548">
+				<img _ngcontent-ng-cli-universal-c73="" src="https://kfcvn-static.cognizantorderserv.com/images/email/logo_footer.png">
+			</a>
+            </div>
+        </div>
+		
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
