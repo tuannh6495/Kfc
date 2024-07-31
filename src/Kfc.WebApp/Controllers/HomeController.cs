@@ -18,7 +18,7 @@ namespace Kfc.WebApp.Controllers
             return View();
         }
 
-        public IActionResult HomePage()
+        public IActionResult Home()
         {
             return View();
         }
