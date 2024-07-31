@@ -1,4 +1,4 @@
-html {
+﻿html {
   font-size: 14px;
 }
 
@@ -17,9 +17,157 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+.footer {
+    background-color: #202124;
+    color: #fff;
+    padding: 60px 0 0; /* Giữ padding top, bỏ padding bottom */
 }
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 20px; /* Thêm padding cho căn lề */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 15px;
+}
+
+    .footer-section h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+        line-height: 1.4;
+    }
+
+        .footer-section ul li {
+            margin-bottom: 4px;
+        }
+
+            .footer-section ul li a {
+                color: #ababab;
+                text-decoration: none;
+                font-size: 15px;
+                transition: color 0.3s ease;
+            }
+
+                .footer-section ul li a:hover {
+                    color: #fff;
+                }
+
+.download-text {
+    font-size: 16px;
+    margin-bottom: 10px; /* Khoảng cách giữa chữ và ảnh */
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+    .download img {
+        width: 150px; /* Bạn có thể điều chỉnh kích thước ảnh theo ý muốn */
+        height: auto;
+    }
+
+    .download .app-store, .download .ggplay {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+  
+
+        
+        
+.certification {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px; /* Thêm padding left và right để căn chỉnh với footer-content */
+    font-size: 15px;
+    color: #ababab;
+    text-align: left;
+    line-height: 1.4;
+}
+
+    .company-info p {
+        margin: 3px 0;
+    }
+
+    .company-info strong {
+        color: #aaa;
+        font-size: 12px;
+    }
+
+.box {
+    border-bottom: 1.5px solid #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.copyright {
+    padding-left: 43%;
+    font-size: 13px;
+    color: #ababab;
+    flex-grow: 1;
+}
+.social-icons {
+    border: 1px;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    border: 1px solid #494949;
+    width: 40px;
+    height: 40px;
+    transition: all .4s;
+}
+
+    .social-icon:hover {
+        color: #fff;
+    }
 
 /*Css cho Layout*/
 .header-left {
@@ -54,7 +202,7 @@ body {
 }
 
 .header-left-logo {
-    background-image: url(https://static.kfcvietnam.com.vn/images/web/kfc-logo.svg?v=5.0);
+   
     width: 78px;
     height: 78px;
 }
@@ -125,3 +273,4 @@ body {
     /*margin: 3px;*/
     background: #000;
 }
+
