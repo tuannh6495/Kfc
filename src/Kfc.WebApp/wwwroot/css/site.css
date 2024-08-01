@@ -315,6 +315,21 @@ html {
     right: 10px;
 }
 
+.row1 .product a {
+    text-decoration: none;
+    color: black;
+}
+
+    .row1 .product a:hover {
+        text-decoration: none;
+        color: black;
+    }
+
+.row1-product-title {
+    color: black;
+}
+
+
 /*Css cho Body*/
 .container-item {
     width: 100%;
@@ -578,7 +593,7 @@ html {
 
 .icon-ggplay-btn {
     background: url(https://static.kfcvietnam.com.vn/images/content/home/mobileappbanner/boton-google.png);
-    width: 162px;;
+    width: 162px;
     height: 48px;
     display: inline-block;
     vertical-align: middle;
@@ -593,3 +608,93 @@ html {
     vertical-align: middle;
     cursor: pointer;
 }
+
+/*css cho phần hotdeal*/
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+
+.sidebar {
+    
+    
+    border-radius: 8px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    width: calc(25% - 15px);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    margin-bottom: 10px;
+}
+
+.current-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e4002b;
+}
+
+.original-price {
+    font-size: 14px;
+    color: #666;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    width: 100%;
+    background-color: #e4002b;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    margin-top: auto; /* Đẩy nút xuống dưới cùng */
+}
+
+    .add-to-cart:hover {
+        background-color: #c1001f;
+    }
