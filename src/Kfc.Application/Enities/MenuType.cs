@@ -12,10 +12,5 @@ namespace Kfc.Application.Enities
 
         public ICollection<Item> Items { get; set; }
         public ICollection<Combo> Combos { get; set; }
-
-        //public MenuType(string menuTypeName)
-        //{
-        //    MenuTypeName = menuTypeName;
-        //}
     }
 }

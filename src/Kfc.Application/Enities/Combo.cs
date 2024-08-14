@@ -17,13 +17,5 @@ namespace Kfc.Application.Enities
         public MenuType MenuType { get; set; }
 
         public IList<ComboItem> ComboItem { get; set; }
-
-        //public Combo(string comboName, string comboDesc, double comboPrice, int menuTypeId)
-        //{
-        //    comboName = ComboName;
-        //    comboDesc = ComboDesc;
-        //    comboPrice = ComboPrice;
-        //    menuTypeId = MenuTypeId;
-        //}
     }
 }

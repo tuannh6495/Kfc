@@ -17,11 +17,5 @@ namespace Kfc.Application.Enities
 
         [ForeignKey("ItemId")]
         public Item Item { get; set; }
-
-        //public ComboItem(int comboId, int itemId)
-        //{
-        //    ComboId = comboId;
-        //    ItemId = itemId;
-        //}
     }
 }
