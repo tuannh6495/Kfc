@@ -1,0 +1,39 @@
+﻿.menu-list {
+    padding: 30px;
+}
+
+.menu-nav-wrapper {
+    margin-bottom: 2.14285714rem;
+    padding-top: .57142857rem;
+    background: #fff;
+    overflow: hidden;
+}
+
+.menu-nav-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1.07142857rem;
+    margin: 0 auto;
+}
+
+.menu-nav-list ul {
+    display: flex;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.menu-item {
+    list-style-type: none;
+    margin: 0 2.14285714rem;
+    text-transform: uppercase;
+    width: auto;
+    display: inline-block;
+    padding: 0;
+}
+
+.menu-item a {
+    color: #000;
+    font-family: Oswald, sans-serif;
+    cursor: pointer;
+    font-size: 20px;
+}
